@@ -22,7 +22,7 @@ jobs:
           script: |
             echo "running pull..."
             cd domains/beige-crane-513435.hostingersite.com/
-            git pull origin main
+            git pull
             echo "done!"
             echo "running deploy.sh..."
             chmod +x .github/scripts/deploy.sh
