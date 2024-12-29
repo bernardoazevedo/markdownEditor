@@ -1,0 +1,36 @@
+body {
+}
+
+.list-content h1 {
+    font-size: 34px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.list-content ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    margin: 2px 0px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.list-content a:hover {
+    color: rgb(137, 76, 216);
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    border: 1px solid #4b5563;
+}
+
+th {
+    background-color: #E5E5E5;
+}
