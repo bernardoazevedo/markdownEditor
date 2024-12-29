@@ -18,7 +18,7 @@ jobs:
           username: ${{ secrets.REMOTE_USER }}
           password: ${{ secrets.REMOTE_PASSWORD }}
           port: ${{ secrets.REMOTE_PORT }}
-          key: ${{ secrets.SERVER_SSH_KEY }}
+          # key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
             echo "running pull..."
             cd domains/beige-crane-513435.hostingersite.com/

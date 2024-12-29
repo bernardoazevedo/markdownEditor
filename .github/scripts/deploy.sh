@@ -21,11 +21,11 @@ rm composer.phar
 npm install
 npm run build
 
-# echo "Configurações Laravel..."
-# php artisan key:generate --ansi
-# php artisan storage:link
-# ln -s public public_html
-# php artisan migrate
+echo "Configurações Laravel..."
+php artisan key:generate --ansi
+php artisan storage:link
+ln -s public public_html
+php artisan migrate
 
 
 echo "Deploy finalizado!"
