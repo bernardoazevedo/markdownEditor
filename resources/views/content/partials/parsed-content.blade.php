@@ -40,33 +40,33 @@
 }
 
 .parsedown a {
-    color: rgb(103, 25, 177);
+    color: #559949;
 }
 
 .parsedown a:hover {
-    color: rgb(60, 9, 107);
+    color: #437e38;
 }
 
 .parsedown pre {
-    background-color: #4b5563;
-    border-radius: 8px;
+    background-color: #e7e7e7;
+    border-radius: 4px;
     padding: 8px 16px;
     margin: 4px 0px 16px 0px;
     text-wrap: wrap;
 }
 
 .parsedown code {
-    background-color: #4b5563;
-    color: #f5f5f5;
-    border-radius: 8px;
-    padding: 2px;
+    background-color: #e7e7e7;
+    color: #111827;
+    border-radius: 4px;
+    padding: 2px 4px;
     margin: 4px 0px 16px 0px;
     font-family: "Roboto Mono", monospace;
     font-size: small;
 }
 </style>
 <section>
-    <div id="htmlText" class="parsedown flex flex-col gap-y-2 sm:w-auto text-gray-600">
+    <div id="htmlText" class="parsedown flex flex-col gap-y-2 sm:w-auto text-gray-700">
         O conteúdo formatado aparecerá aqui
     </div>
 </section>

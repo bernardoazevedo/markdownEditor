@@ -4,7 +4,7 @@ $(document).ready(function(){
 
         $.ajax({
             url: '/markdownToHtml',
-            type: 'GET',
+            type: 'POST',
             data:{
                 markdownText: markdownText
             },
