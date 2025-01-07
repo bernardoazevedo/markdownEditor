@@ -10,4 +10,6 @@
             </div>
         </div>
     </div>
+
+    @include('content.partials.style-editor')
 </x-app-layout>

@@ -19,4 +19,16 @@ $(document).ready(function(){
 
     $('#text').ready(parseMarkdown);
     $('#text').on('keyup', parseMarkdown);
+
+    var root = document.querySelector(':root');
+
+    $('#highlight-color').on('change', function(){
+        let newColor = $(this).val();
+        root.style.setProperty('--highlight-color', newColor);
+    });
+
+    $('#text-color').on('change', function(){
+        let newColor = $(this).val();
+        root.style.setProperty('--text-color', newColor);
+    });
 });

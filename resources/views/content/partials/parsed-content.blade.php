@@ -1,4 +1,17 @@
 <style>
+
+@property --text-color {
+    initial-value: #374151;
+}
+
+@property --highlight-color {
+    initial-value: #559949;
+}
+
+.parsedown {
+    color: var(--text-color);
+}
+
 .parsedown h1 {
     font-size: 34px;
     font-weight: bold;
@@ -40,7 +53,7 @@
 }
 
 .parsedown a {
-    color: #559949;
+    color: var(--highlight-color);
 }
 
 .parsedown a:hover {
