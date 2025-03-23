@@ -1,16 +1,25 @@
 :root {
     --text-color: #374151;
-    --highlight-color: #559949;
-
     --text-color-darker: hsl(from var(--text-color) h s calc(l - 10));
     --text-color-darkest: hsl(from var(--text-color) h s calc(l - 20));
 
+    --highlight-color: #559949;
     --highlight-color-darker: hsl(from var(--highlight-color) h s calc(l - 10));
     --highlight-color-darkest: hsl(from var(--highlight-color) h s calc(l - 20));
+
+    --background-color: #FFFFFF;
+    --background-color-darker: hsl(from var(--background-color) h s calc(l - 10));
+    --background-color-darkest: hsl(from var(--background-color) h s calc(l - 20));
+}
+
+#preview-container {
+    background-color: var(--background-color);
 }
 
 .parsedown {
     color: var(--text-color);
+    text-wrap: wrap;
+    overflow-wrap: break-word;
 }
 
 .parsedown h1 {
@@ -66,16 +75,15 @@
 }
 
 .parsedown pre {
-    background-color: #e5e7eb;
+    background-color: var(--background-color-darker);
     border-radius: 8px;
     padding: 8px 16px;
     margin: 4px 0px 16px 0px;
-    text-wrap: wrap;
-    overflow-wrap: break-word;
+
 }
 
 .parsedown code {
-    background-color: #e5e7eb;
+    background-color: var(--background-color-darker);
     border-radius: 8px;
     color: var(--text-color);
     padding: 2px;
@@ -115,9 +123,23 @@ table {
 th,
 td {
     padding: 8px;
-    border: 1px solid #4b5563;
+    border: 1px solid var(--text-color);
 }
 
 th {
-    background-color: #E5E5E5;
+    background-color: var(--background-color-darker);
+}
+
+blockquote {
+    font-size: 16px;
+    margin: 16px auto;
+    font-style: italic;
+    color: var(--text-color);
+    padding: 16px;
+    border-left: 3px solid var(--highlight-color);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    line-height: 1.6;
+    position: relative;
+    background: var(--background-color-darker);
 }

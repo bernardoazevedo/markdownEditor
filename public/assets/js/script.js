@@ -31,4 +31,9 @@ $(document).ready(function(){
         let newColor = $(this).val();
         root.style.setProperty('--text-color', newColor);
     });
+
+    $('#background-color').on('change', function(){
+        let newColor = $(this).val();
+        root.style.setProperty('--background-color', newColor);
+    });
 });
