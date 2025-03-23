@@ -8,7 +8,7 @@
         <title>{{ config('app.name', 'Bernardo Azevedo') }}</title>
 
         <link rel="icon" href="{{ url('assets/css/favicon.ico') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}" >
+        <link rel="stylesheet" href="{{ asset('assets/css/app.css?v1') }}" >
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -37,5 +37,5 @@
     </body>
 
     <script src="{{ url('assets/js/jquery-3.7.1.min.js') }}"></script>
-    <script src="{{ url('assets/js/script.js') }}"></script>
+    <script src="{{ url('assets/js/script.js?v1') }}"></script>
 </html>
