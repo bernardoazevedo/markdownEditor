@@ -39,5 +39,6 @@
     </body>
 
     <script src="{{ url('assets/js/jquery-3.7.1.min.js') }}"></script>
+    <script src="{{ url('assets/js/js.cookie.min.js') }}"></script>
     <script src="{{ url('assets/js/script.js?v1') }}"></script>
 </html>

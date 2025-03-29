@@ -1,6 +1,7 @@
 $(document).ready(function(){
     let parseMarkdown = function(){
         let markdownText = $('#text').val();
+        Cookies.set("markdownText", markdownText, {expires: 7});
 
         $.ajax({
             url: '/markdownToHtml',
@@ -16,6 +17,9 @@ $(document).ready(function(){
             }
         });
     }
+
+    lastMarkdownText = Cookies.get("markdownText");
+    $('#text').val(lastMarkdownText);
 
     $('#text').ready(parseMarkdown);
     $('#text').on('keyup', parseMarkdown);
