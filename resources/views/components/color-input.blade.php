@@ -1,0 +1,3 @@
+@props(['disabled' => false])
+
+<input @disabled($disabled) type="color" {{ $attributes->merge(['class' => 'float-right rounded-md p-1 w-full h-10 cursor-pointer border border-gray-200 bg-white']) }}>

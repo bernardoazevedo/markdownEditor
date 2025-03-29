@@ -2,22 +2,28 @@
     <div class="flex flex-col gap-y-2 sm:w-auto">
         <header class="text-lg font-medium mb-2">Edit your content style</header>
 
-        <div>
-            <label for="textColor">Text Color</label>
-            <input class="float-right rounded-md p-1 w-10 h-8 cursor-pointer border border-gray-200 bg-white"
-                   type="color" name="textColor" id="textColor" value="#374151">
-        </div>
-        <div>
-            <label for="highlightColor">Highlight Color</label>
-            <input class="float-right rounded-md p-1 w-10 h-8 cursor-pointer border border-gray-200 bg-white"
-                   type="color" name="highlightColor" id="highlightColor" value="#559949">
-        </div>
-        <div>
-            <label for="backgroundColor">Background Color</label>
-            <input class="float-right rounded-md p-1 w-10 h-8 cursor-pointer border border-gray-200 bg-white"
-                   type="color" name="backgroundColor" id="backgroundColor" value="#FFFFFF">
+        <div class="flex gap-3 flex-wrap">
+            <div class="flex flex-col flex-grow">
+                <x-color-input-label for="textColor" class="truncate">Text Color</x-color-input-label>
+                <x-color-input name="textColor" id="textColor" value="#374151"></x-color-input>
+            </div>
+            <div class="flex flex-col flex-grow">
+                <x-color-input-label for="highlightColor" class="truncate">Highlight Color</x-color-input-label>
+                <x-color-input name="highlightColor" id="highlightColor" value="#559949"></x-color-input>
+            </div>
+            <div class="flex flex-col flex-grow">
+                <x-color-input-label for="backgroundColor" class="truncate">Background Color</x-color-input-label>
+                <x-color-input name="backgroundColor" id="backgroundColor" value="#FFFFFF"></x-color-input>
+            </div>
         </div>
 
-        <x-primary-button class="mt-4 max-w-fit">Generate PDF</x-primary-button>
+        <div class="flex gap-3 flex-wrap mt-4">
+            <div class="flex flex-col flex-grow">
+                <x-input-label for="filename">Filename</x-input-label>
+                <x-text-input name="filename" id="filename" class="w-full"></x-text-input>
+            </div>
+            <x-primary-button class="max-w-fit">Generate PDF</x-primary-button>
+        </div>
+
     </div>
 </section>

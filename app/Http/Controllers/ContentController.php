@@ -26,6 +26,14 @@ class ContentController extends Controller {
         $colorService = new Color();
         $rawText = $request->text;
 
+        $filename = trim($request->filename);
+        $nameInfo = pathinfo($filename);
+        $nameInfo['extension'] = $nameInfo['extension'] ?? 'pdf';
+        if($nameInfo['extension'] != 'pdf'){
+            $nameInfo['extension'] = 'pdf';
+        }
+        $filename = $nameInfo['filename'].'.'.$nameInfo['extension'];
+
         $cssColors = [
             '--textColor' => $request->textColor,
             '--highlightColor' => $request->highlightColor,
@@ -43,7 +51,7 @@ class ContentController extends Controller {
 
         $mpdf = new \Mpdf\Mpdf();
         $mpdf->WriteHTML($css.$htmlText);
-        $mpdf->Output();
+        $mpdf->Output($filename, \Mpdf\Output\Destination::DOWNLOAD);
     }
 
     private function parseCssVariables($cssCode, $cssColors){
