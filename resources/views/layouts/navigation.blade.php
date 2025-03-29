@@ -1,10 +1,12 @@
 <nav x-data="{ open: false }" class="bg-white border-b border-gray-100 shadow-sm">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-16">
-            <div class="flex">
+        <div class="flex justify-between items-center h-16">
+            <span class="text-lg">Edit markdown files and convert them to PDF</span>
 
-            </div>
+            <a href="https://github.com/bernardoazevedo/markdownEditor" target="_blank">
+                <img src="{{ asset('assets/images/github.svg') }}" alt="Github Logo" width="24px">
+            </a>
         </div>
     </div>
 
