@@ -26,7 +26,8 @@ class ContentController extends Controller {
         $colorService = new Color();
         $rawText = $request->text;
 
-        $filename = trim($request->filename);
+        $filename = $request->filename ?? 'downloadedFile.pdf';
+        $filename = trim($filename);
         $nameInfo = pathinfo($filename);
         $nameInfo['extension'] = $nameInfo['extension'] ?? 'pdf';
         if($nameInfo['extension'] != 'pdf'){
