@@ -22,18 +22,18 @@ $(document).ready(function(){
 
     var root = document.querySelector(':root');
 
-    $('#highlight-color').on('change', function(){
+    $('#highlightColor').on('change', function(){
         let newColor = $(this).val();
-        root.style.setProperty('--highlight-color', newColor);
+        root.style.setProperty('--highlightColor', newColor);
     });
 
-    $('#text-color').on('change', function(){
+    $('#textColor').on('change', function(){
         let newColor = $(this).val();
-        root.style.setProperty('--text-color', newColor);
+        root.style.setProperty('--textColor', newColor);
     });
 
-    $('#background-color').on('change', function(){
+    $('#backgroundColor').on('change', function(){
         let newColor = $(this).val();
-        root.style.setProperty('--background-color', newColor);
+        root.style.setProperty('--backgroundColor', newColor);
     });
 });

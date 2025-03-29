@@ -3,16 +3,18 @@
         <header class="text-lg font-medium mb-2">Edit your content style</header>
 
         <div>
-            <label for="text-color">Text Color</label>
-            <input class="float-right" type="color" name="text-color" id="text-color">
+            <label for="textColor">Text Color</label>
+            <input class="float-right" type="color" name="textColor" id="textColor" value="#374151">
         </div>
         <div>
-            <label for="highlight-color">Highlight Color</label>
-            <input class="float-right" type="color" name="highlight-color" id="highlight-color">
+            <label for="highlightColor">Highlight Color</label>
+            <input class="float-right" type="color" name="highlightColor" id="highlightColor" value="#559949">
         </div>
         <div>
-            <label for="background-color">Background Color</label>
-            <input class="float-right" type="color" name="background-color" id="background-color">
+            <label for="backgroundColor">Background Color</label>
+            <input class="float-right" type="color" name="backgroundColor" id="backgroundColor" value="#FFFFFF">
         </div>
+
+        <x-primary-button class="mt-4">Generate PDF</x-primary-button>
     </div>
 </section>

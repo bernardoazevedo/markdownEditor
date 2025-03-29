@@ -1,23 +1,23 @@
 :root {
-    --text-color: #374151;
-    --text-color-darker: hsl(from var(--text-color) h s calc(l - 10));
-    --text-color-darkest: hsl(from var(--text-color) h s calc(l - 20));
+    --textColor: #374151;
+    --textColor0: hsl(from var(--textColor) h s calc(l - 10));
+    --textColor1: hsl(from var(--textColor) h s calc(l - 20));
 
-    --highlight-color: #559949;
-    --highlight-color-darker: hsl(from var(--highlight-color) h s calc(l - 10));
-    --highlight-color-darkest: hsl(from var(--highlight-color) h s calc(l - 20));
+    --highlightColor: #559949;
+    --highlightColor0: hsl(from var(--highlightColor) h s calc(l - 10));
+    --highlightColor1: hsl(from var(--highlightColor) h s calc(l - 20));
 
-    --background-color: #FFFFFF;
-    --background-color-darker: hsl(from var(--background-color) h s calc(l - 10));
-    --background-color-darkest: hsl(from var(--background-color) h s calc(l - 20));
+    --backgroundColor: #FFFFFF;
+    --backgroundColor0: hsl(from var(--backgroundColor) h s calc(l - 10));
+    --backgroundColor1: hsl(from var(--backgroundColor) h s calc(l - 20));
 }
 
 #preview-container {
-    background-color: var(--background-color);
+    background-color: var(--backgroundColor);
 }
 
 .parsedown {
-    color: var(--text-color);
+    color: var(--textColor);
     text-wrap: wrap;
     overflow-wrap: break-word;
 }
@@ -63,19 +63,19 @@
 }
 
 .parsedown a {
-    color: var(--highlight-color);
+    color: var(--highlightColor);
 }
 
 .parsedown a:hover {
-    color: var(--highlight-color-darker);
+    color: var(--highlightColor0);
 }
 
 .parsedown a:active {
-    color: var(--highlight-color-darkest);
+    color: var(--highlightColor1);
 }
 
 .parsedown pre {
-    background-color: var(--background-color-darker);
+    background-color: var(--backgroundColor0);
     border-radius: 8px;
     padding: 8px 16px;
     margin: 4px 0px 16px 0px;
@@ -84,9 +84,9 @@
 }
 
 .parsedown code {
-    background-color: var(--background-color-darker);
+    background-color: var(--backgroundColor0);
     border-radius: 8px;
-    color: var(--text-color);
+    color: var(--textColor);
     padding: 2px;
     margin: 4px 0px 16px 0px;
     font-family: "Roboto Mono", monospace;
@@ -108,11 +108,11 @@
 }
 
 .list-content a:hover {
-    color: var(--highlight-color-darker);
+    color: var(--highlightColor0);
 }
 
 .list-content a:active {
-    color: var(--highlight-color-darkest);
+    color: var(--highlightColor1);
 }
 
 table {
@@ -124,25 +124,25 @@ table {
 th,
 td {
     padding: 8px;
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--textColor);
 }
 
 th {
-    background-color: var(--background-color-darker);
+    background-color: var(--backgroundColor0);
 }
 
 blockquote {
     font-size: 16px;
     margin: 16px auto;
     font-style: italic;
-    color: var(--text-color);
+    color: var(--textColor);
     padding: 16px;
-    border-left: 3px solid var(--highlight-color);
+    border-left: 3px solid var(--highlightColor);
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     line-height: 1.6;
     position: relative;
-    background: var(--background-color-darker);
+    background: var(--backgroundColor0);
 }
 
 
