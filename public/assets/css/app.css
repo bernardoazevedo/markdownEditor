@@ -12,7 +12,7 @@
     --backgroundColor1: hsl(from var(--backgroundColor) h s calc(l - 20));
 }
 
-#preview-container {
+#htmlText {
     background-color: var(--backgroundColor);
 }
 
@@ -173,7 +173,7 @@ blockquote {
 .grow-wrap::after {
     /* Identical styling required!! */
     /* border: 1px solid black; */
-    padding: 2rem;
+    padding: 16px;
     font: inherit;
 
     /* Place on top of each other */
