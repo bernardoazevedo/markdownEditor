@@ -18,7 +18,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
+        <div class="min-h-screen bg-gray-100 mb-16">
 
             @include('layouts.navigation')
 
@@ -31,10 +31,16 @@
                 </header>
             @endisset
 
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
+            <form action="/generatePdf" method="post">
+                @csrf
+
+                <!-- Page Content -->
+                <main>
+                    {{ $slot }}
+                </main>
+
+                @include('layouts.footer')
+            </form>
         </div>
     </body>
 

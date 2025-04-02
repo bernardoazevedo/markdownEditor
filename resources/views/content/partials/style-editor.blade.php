@@ -15,12 +15,4 @@
             <x-color-input name="backgroundColor" id="backgroundColor" value="#FFFFFF"></x-color-input>
         </div>
     </div>
-
-    <div class="flex gap-3 flex-wrap sm:w-auto p-4">
-        <div class="flex flex-col flex-grow">
-            <x-input-label for="filename">Filename</x-input-label>
-            <x-text-input name="filename" id="filename" class="w-full"></x-text-input>
-        </div>
-        <x-primary-button class="max-w-fit">Generate PDF</x-primary-button>
-    </div>
 </x-section>
