@@ -40,4 +40,9 @@ $(document).ready(function(){
         let newColor = $(this).val();
         root.style.setProperty('--backgroundColor', newColor);
     });
+
+    $('#titleMargin').on('change', function(){
+        let newMargin = $(this).val();
+        root.style.setProperty('--titleMargin', newMargin+'px');
+    });
 });

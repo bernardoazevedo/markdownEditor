@@ -10,6 +10,8 @@
     --backgroundColor: #FFFFFF;
     --backgroundColor0: hsl(from var(--backgroundColor) h s calc(l - 10));
     --backgroundColor1: hsl(from var(--backgroundColor) h s calc(l - 20));
+
+    --titleMargin: 8px;
 }
 
 #htmlText {
@@ -25,31 +27,31 @@
 .parsedown h1 {
     font-size: 34px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: var(--titleMargin);
 }
 
 .parsedown h2 {
     font-size: 24px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: var(--titleMargin);
 }
 
 .parsedown h3 {
     font-size: 20px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: var(--titleMargin);
 }
 
 .parsedown h4 {
     font-size: 18px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: var(--titleMargin);
 }
 
 .parsedown h5 {
     font-size: 16px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: var(--titleMargin);
 }
 
 .parsedown ul {

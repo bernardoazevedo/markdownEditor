@@ -14,5 +14,9 @@
             <x-color-input-label for="backgroundColor" class="truncate">Background Color</x-color-input-label>
             <x-color-input name="backgroundColor" id="backgroundColor" value="#FFFFFF"></x-color-input>
         </div>
+        <div class="flex flex-col flex-grow">
+            <x-input-label for="titleMargin" class="truncate">Title Margin</x-input-label>
+            <x-text-input name="titleMargin" id="titleMargin" placeholder="4px" type="number"></x-text-input>
+        </div>
     </div>
 </x-section>

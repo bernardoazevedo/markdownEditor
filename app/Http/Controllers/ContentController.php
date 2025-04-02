@@ -35,18 +35,22 @@ class ContentController extends Controller {
         }
         $filename = $nameInfo['filename'].'.'.$nameInfo['extension'];
 
+        $cssVariables = [
+            '--titleMargin' => $request->titleMargin.'px',
+        ];
         $cssColors = [
             '--textColor' => $request->textColor,
             '--highlightColor' => $request->highlightColor,
             '--backgroundColor' => $request->backgroundColor,
         ];
         $cssColors = $colorService->generateDarkerColors($cssColors, 2);
+        $cssVariables = array_merge($cssVariables, $cssColors);
 
         $htmlText = $this->markdownToHtml($rawText);
 
         $rawCss = Storage::disk('public')->get('app.css');
 
-        $parsedCss = $this->parseCssVariables($rawCss, $cssColors);
+        $parsedCss = $this->parseCssVariables($rawCss, $cssVariables);
 
         $css = '<style>'. $parsedCss .'</style>';
 
