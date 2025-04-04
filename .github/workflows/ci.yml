@@ -21,7 +21,7 @@ jobs:
           # key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
             echo "running pull..."
-            cd domains/beige-crane-513435.hostingersite.com/
+            cd domains/${{ secrets.APP_URL }}/
             git pull
             echo "done!"
             echo "running deploy.sh..."
