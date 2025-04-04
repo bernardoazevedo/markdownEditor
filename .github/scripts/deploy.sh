@@ -25,7 +25,7 @@ echo "Configurações Laravel..."
 php artisan key:generate --ansi
 php artisan storage:link
 ln -s public public_html
-php artisan migrate
+php artisan migrate --force
 
 
 echo "Deploy finalizado!"

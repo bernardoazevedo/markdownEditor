@@ -1,5 +1,5 @@
 name: markdownEditor CI
-on: 
+on:
   push:
     branches:
       - main
@@ -20,6 +20,7 @@ jobs:
           port: ${{ secrets.REMOTE_PORT }}
           # key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
+            echo "(php artisan down) || true"
             echo "running pull..."
             cd domains/${{ secrets.APP_URL }}/
             git pull
@@ -27,6 +28,7 @@ jobs:
             echo "running deploy.sh..."
             chmod +x .github/scripts/deploy.sh
             ./.github/scripts/deploy.sh
+            php artisan up
             echo "done!"
 
 
