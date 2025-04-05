@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Services\Color;
+use App\Services\CssVariablesParser;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use ParsedownExtra;
@@ -51,19 +52,12 @@ class ContentController extends Controller {
 
         $rawCss = Storage::disk('public')->get('pdf.css');
 
-        $parsedCss = $this->parseCssVariables($rawCss, $cssVariables);
+        $parsedCss = CssVariablesParser::parseAllFromArray($rawCss, $cssVariables);
 
         $css = '<style>'. $parsedCss .'</style>';
 
         $mpdf = new \Mpdf\Mpdf();
         $mpdf->WriteHTML($css.$htmlText);
         $mpdf->Output($filename, \Mpdf\Output\Destination::DOWNLOAD);
-    }
-
-    private function parseCssVariables($cssCode, $cssColors){
-        foreach($cssColors as $key => $value){
-            $cssCode = str_replace("var($key)", $value, $cssCode);
-        }
-        return $cssCode;
     }
 }

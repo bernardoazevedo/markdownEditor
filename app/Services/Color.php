@@ -27,6 +27,7 @@ class Color {
             }
 
         }
+        ksort($colors_array);
         return $colors_array;
     }
 
