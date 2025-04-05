@@ -3,7 +3,7 @@
 
     <div class="grow-wrap dont-break-out">
         <textarea id="text" name="text" type="text" rows="27" cols=""
-            class="p-4 border-none focus:border-gray-400 focus:ring-gray-400 block w-full rounded-b"
+            class="p-4 block w-full rounded-b border-white focus:border-emerald-500 focus:ring-emerald-500 focus:border-1"
             required autofocus autocomplete="text" placeholder="Type here"
             onInput="this.parentNode.dataset.replicatedValue = this.value"></textarea>
     </div>

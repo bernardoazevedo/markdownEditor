@@ -3,7 +3,7 @@
     --textColor0: hsl(from var(--textColor) h s calc(l - 10));
     --textColor1: hsl(from var(--textColor) h s calc(l - 20));
 
-    --highlightColor: #559949;
+    --highlightColor: #10b981;
     --highlightColor0: hsl(from var(--highlightColor) h s calc(l - 10));
     --highlightColor1: hsl(from var(--highlightColor) h s calc(l - 20));
 

@@ -1,4 +1,4 @@
-<footer class="bg-white border-t border-gray-200 shadow fixed bottom-0 w-full">
+<footer class="bg-white border-t border-stone-200 shadow fixed bottom-0 w-full">
     <div class="flex gap-2 flex-wrap sm:w-auto p-3 justify-center">
         <x-text-input name="filename" id="filename" placeholder="Filename" class="grow max-w-md h-10"></x-text-input>
 

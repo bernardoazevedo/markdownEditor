@@ -30,7 +30,7 @@
 
     <!--Footer container-->
     <footer
-    class="flex flex-col items-center text-gray-700 text-center text-surface">
+    class="flex flex-col items-center text-stone-700 text-center text-surface">
         <div class="w-full pt-4 bg-zinc-100">
             <!-- Social media icons container -->
             <div class="mb-4 flex justify-center space-x-2">
