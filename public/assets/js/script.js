@@ -42,7 +42,12 @@ $(document).ready(function(){
     });
 
     $('#titleMargin').on('change', function(){
-        let newMargin = $(this).val();
-        root.style.setProperty('--titleMargin', newMargin+'px');
+        let newTitleMargin = $(this).val();
+        root.style.setProperty('--titleMargin', newTitleMargin+'px');
+    });
+
+    $('#marginHeight').on('change', function(){
+        let newMarginHeight = $(this).val();
+        root.style.setProperty('--marginHeight', newMarginHeight+'px');
     });
 });

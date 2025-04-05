@@ -18,5 +18,9 @@
             <x-input-label for="titleMargin" class="truncate">Title Margin</x-input-label>
             <x-text-input name="titleMargin" id="titleMargin" placeholder="4px" type="number"></x-text-input>
         </div>
+        <div class="flex flex-col flex-grow">
+            <x-input-label for="marginHeight" class="truncate">Margin Between Elements</x-input-label>
+            <x-text-input name="marginHeight" id="marginHeight" placeholder="4px" type="number"></x-text-input>
+        </div>
     </div>
 </x-section>

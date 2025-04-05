@@ -36,6 +36,7 @@ class ContentController extends Controller {
         $filename = $nameInfo['filename'].'.'.$nameInfo['extension'];
 
         $cssVariables = [
+            '--marginHeight' => $request->marginHeight.'px',
             '--titleMargin' => $request->titleMargin.'px',
         ];
         $cssColors = [
@@ -48,7 +49,7 @@ class ContentController extends Controller {
 
         $htmlText = $this->markdownToHtml($rawText);
 
-        $rawCss = Storage::disk('public')->get('app.css');
+        $rawCss = Storage::disk('public')->get('pdf.css');
 
         $parsedCss = $this->parseCssVariables($rawCss, $cssVariables);
 

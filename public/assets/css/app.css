@@ -11,7 +11,7 @@
     --backgroundColor0: hsl(from var(--backgroundColor) h s calc(l - 10));
     --backgroundColor1: hsl(from var(--backgroundColor) h s calc(l - 20));
 
-    --titleMargin: 8px;
+    --marginHeight: 8px;
 }
 
 #htmlText {
@@ -27,41 +27,43 @@
 .parsedown h1 {
     font-size: 34px;
     font-weight: bold;
-    margin-top: var(--titleMargin);
+    margin-top: var(--titleMargin) !important;
 }
 
 .parsedown h2 {
     font-size: 24px;
     font-weight: bold;
-    margin-top: var(--titleMargin);
+    margin-top: var(--titleMargin) !important;
 }
 
 .parsedown h3 {
     font-size: 20px;
     font-weight: bold;
-    margin-top: var(--titleMargin);
+    margin-top: var(--titleMargin) !important;
 }
 
 .parsedown h4 {
     font-size: 18px;
     font-weight: bold;
-    margin-top: var(--titleMargin);
+    margin-top: var(--titleMargin) !important;
 }
 
 .parsedown h5 {
     font-size: 16px;
     font-weight: bold;
-    margin-top: var(--titleMargin);
+    margin-top: var(--titleMargin) !important;
 }
 
 .parsedown ul {
     list-style-type: circle;
     list-style-position: inside;
+    margin-top: var(--marginHeight) !important;
 }
 
 .parsedown ol {
     list-style-type: decimal;
     list-style-position: inside;
+    margin-top: var(--marginHeight) !important;
 }
 
 .parsedown a {
@@ -83,6 +85,7 @@
     margin: 4px 0px 16px 0px;
     text-wrap: wrap;
     overflow-wrap: break-word;
+    margin-top: var(--marginHeight) !important;
 }
 
 .parsedown code {
@@ -121,6 +124,7 @@ table {
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
+    margin-top: var(--marginHeight) !important;
 }
 
 th,
@@ -135,7 +139,6 @@ th {
 
 blockquote {
     font-size: 16px;
-    margin: 16px auto;
     font-style: italic;
     color: var(--textColor);
     padding: 16px;
@@ -145,6 +148,7 @@ blockquote {
     line-height: 1.6;
     position: relative;
     background: var(--backgroundColor0);
+    margin-top: var(--marginHeight) !important;
 }
 
 
