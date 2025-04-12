@@ -8,11 +8,7 @@
         <title>{{ config('app.name', 'Markdown Editor') }}</title>
 
         <link rel="icon" href="{{ url('assets/css/favicon.ico') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/app.css?v1') }}" >
-
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="{{ asset('assets/css/app.css?v2') }}" >
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
