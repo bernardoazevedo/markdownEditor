@@ -6,7 +6,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <meta name="description" content="Edit text in markdown and convert to PDF">
-        <meta name="keywords" content="markdown, pdf, convert">
+        <meta name="keywords" content="markdown, pdf, convert, editor, md, converter, md2pdf">
         <meta name="robots" content="index, follow">
         <meta name="author" content="Bernardo Azevedo">
 
