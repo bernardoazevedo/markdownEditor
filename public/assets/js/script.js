@@ -41,7 +41,7 @@ $(document).ready(function(){
         root.style.setProperty('--backgroundColor', newColor);
     });
 
-    $('#titleMargin').on('change', function(){
+    $('#titleMargin').on('change', function( ){
         let newTitleMargin = $(this).val();
         root.style.setProperty('--titleMargin', newTitleMargin+'px');
     });
@@ -50,4 +50,22 @@ $(document).ready(function(){
         let newMarginHeight = $(this).val();
         root.style.setProperty('--marginHeight', newMarginHeight+'px');
     });
+
+    $('.copy-button').click(function() {
+        event.preventDefault();
+
+        let elementName = $(this).children()[0].value;
+        elementToCopy = $('#'+elementName);
+
+        let textToCopy = elementToCopy.text();
+        if(textToCopy == ''){
+            textToCopy = elementToCopy.val();
+        }
+
+        let tempTextarea = $('<textarea>');
+        $('body').append(tempTextarea);
+        tempTextarea.val(textToCopy).select();
+        document.execCommand('copy');
+        tempTextarea.remove();
+      });
 });
