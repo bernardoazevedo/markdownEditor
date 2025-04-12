@@ -19,7 +19,7 @@
         <title>{{ config('app.name', 'Markdown Editor') }}</title>
 
         <link rel="icon" href="{{ url('assets/images/favicon.svg') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/app.css?v2') }}" >
+        <link rel="stylesheet" href="{{ asset('assets/css/app.css?v3') }}" >
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])

@@ -27,23 +27,23 @@ $(document).ready(function(){
 
     $('#text').val(Cookies.get("markdownText"));
 
-    let textColor = Cookies.get("textColor");
+    let textColor = Cookies.get("textColor") ?? '#374151';
     $('#textColor').val(textColor);
     root.style.setProperty('--textColor', textColor);
 
-    let highlightColor = Cookies.get("highlightColor");
+    let highlightColor = Cookies.get("highlightColor") ?? '#559949';
     $('#highlightColor').val(highlightColor);
     root.style.setProperty('--highlightColor', highlightColor);
 
-    let backgroundColor = Cookies.get("backgroundColor");
+    let backgroundColor = Cookies.get("backgroundColor") ?? '#FFFFFF';
     $('#backgroundColor').val(backgroundColor);
     root.style.setProperty('--backgroundColor', backgroundColor);
 
-    let titleMargin = Cookies.get("titleMargin");
+    let titleMargin = Cookies.get("titleMargin") ?? '4';
     $('#titleMargin').val(titleMargin);
     root.style.setProperty('--titleMargin', titleMargin+'px');
 
-    let marginHeight = Cookies.get("marginHeight");
+    let marginHeight = Cookies.get("marginHeight") ?? '4';
     $('#marginHeight').val(marginHeight);
     root.style.setProperty('--marginHeight', marginHeight+'px');
 
@@ -96,6 +96,7 @@ $(document).ready(function(){
         document.execCommand('copy');
         tempTextarea.remove();
     });
+
 
     let insertTextInTextarea = function(newText){
         event.preventDefault();
