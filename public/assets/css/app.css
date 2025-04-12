@@ -97,28 +97,6 @@
     font-size: 14px;
 }
 
-.list-content h1 {
-    font-size: 34px;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-.list-content ul {
-    list-style-type: circle;
-    list-style-position: inside;
-    margin: 2px 0px;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.list-content a:hover {
-    color: var(--highlightColor0);
-}
-
-.list-content a:active {
-    color: var(--highlightColor1);
-}
-
 table {
     table-layout: fixed;
     width: 100%;

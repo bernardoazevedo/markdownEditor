@@ -95,5 +95,114 @@ $(document).ready(function(){
         tempTextarea.val(textToCopy).select();
         document.execCommand('copy');
         tempTextarea.remove();
-      });
+    });
+
+    let insertTextInTextarea = function(newText){
+        event.preventDefault();
+        let textarea = $('#text');
+        let text = textarea.val();
+        textarea.val(text+newText);
+        parseMarkdown();
+    }
+
+    $('.insert-link').click(function(){
+        let newText = `
+[Link Example](https://md2pdf.lat)
+`;
+        insertTextInTextarea(newText);
+    });
+
+    $('.insert-table').click(function(){
+        let newText = `
+| Column 1 | Column 2 |
+| -------- | -------- |
+| Cel1     | Cel1     |
+| Cel3     | Cel4     |
+| Cel5     | Cel6     |
+`;
+        insertTextInTextarea(newText);
+    });
+
+    $('.insert-codeblock').click(function(){
+        let newText = `
+\`\`\`
+while(true){
+    echo "codeblock here";
+}
+\`\`\`
+`;
+        insertTextInTextarea(newText);
+    });
+
+    $('.insert-list').click(function(){
+        let newText = `
+- First item
+- Second item
+`;
+        insertTextInTextarea(newText);
+    });
+
+    $('.insert-numberedList').click(function(){
+        let newText = `
+1. Item
+2. Item
+`;
+        insertTextInTextarea(newText);
+    });
+
+    $('.insert-h1').click(function(){
+        let newText = `
+# Header 1
+`;
+        insertTextInTextarea(newText);
+    });
+
+    $('.insert-h2').click(function(){
+        let newText = `
+## Header 2
+`;
+        insertTextInTextarea(newText);
+    });
+
+    $('.insert-h3').click(function(){
+        let newText = `
+### Header 3
+`;
+        insertTextInTextarea(newText);
+    });
+
+    $('.insert-blockquote').click(function(){
+        let newText = `
+> Imagine a beautiful quote here...
+`;
+        insertTextInTextarea(newText);
+    });
+
+    $('.insert-bold').click(function(){
+        let newText = `
+**bold text**
+`;
+        insertTextInTextarea(newText);
+    });
+
+    $('.insert-italic').click(function(){
+        let newText = `
+*italic text*
+`;
+        insertTextInTextarea(newText);
+    });
+
+    $('.insert-image').click(function(){
+        let newText = `
+![Alternate text for the image here](https://images.pexels.com/photos/31356866/pexels-photo-31356866/free-photo-of-majestic-view-of-snow-capped-mount-fuji.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
+`;
+        insertTextInTextarea(newText);
+    });
+
+    $('.insert-horizontalRule').click(function(){
+        let newText = `
+---
+`;
+        insertTextInTextarea(newText);
+    });
 });
