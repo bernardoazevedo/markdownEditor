@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://beige-crane-513435.hostingersite.com/'),
+    'url' => env('APP_URL', 'https://md2pdf.lat/'),
 
     /*
     |--------------------------------------------------------------------------
