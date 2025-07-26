@@ -19,3 +19,7 @@ yarn-error.log
 /.idea
 /.vscode
 database/database.sqlite
+
+Dockerfile
+docker-compose.yml
+000-default.conf
