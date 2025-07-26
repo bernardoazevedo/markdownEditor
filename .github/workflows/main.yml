@@ -17,7 +17,7 @@ jobs:
           server: ${{ secrets.FTP_REMOTE_HOST }}
           username: ${{ secrets.FTP_REMOTE_USER }}
           password: ${{ secrets.FTP_REMOTE_PASSWORD }}
-          server-dir: domains/phatalog.xyz/
+          server-dir: domains/md2pdf.lat/
 
       - name: Deploy to server
         uses: appleboy/ssh-action@v1.2.0
@@ -29,7 +29,7 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
             pwd
-            cd domains/mistyrose-grasshopper-177868
+            cd domains/md2pdf.lat
 
             echo "opa, vamos configurar..."
 
